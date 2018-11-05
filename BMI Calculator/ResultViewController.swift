@@ -10,7 +10,9 @@ import UIKit
 
 class ResultViewController: UIViewController {
     
-    
+    var valueBmi : Float?
+    var userName : NSString?
+    var age : Float?
     
     @IBOutlet weak var labelUserName: UILabel!
     
@@ -23,7 +25,15 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let sValueBmi = NSString(format: "%.2f", valueBmi!);
+        let sAge = NSString(format: "%.0f", age!);
+        
+        self.labelUserName.text = "Hello \(userName!)";
+        self.labelAge.text = "\(sAge) years";
+        self.lableResultBmi.text = "\(sValueBmi)";
+        
+        
+
     }
 
     override func didReceiveMemoryWarning() {

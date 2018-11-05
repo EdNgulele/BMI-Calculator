@@ -86,7 +86,18 @@ class ViewController: UIViewController {
         userName = sUserName as NSString;
         age = ageFloat;
         
+        self.shouldPerformSegue(withIdentifier: "segueBMIResult", sender: nil)
+        
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "segueBMIResult") {
+            let resultScreen = segue.destination as? ResultViewController;
+            
+            resultScreen?.valueBmi = self.valueBmi;
+            resultScreen?.userName = self.userName;
+            resultScreen?.age = self.age;
+        }
+    }
     
 }
