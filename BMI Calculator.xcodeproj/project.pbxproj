@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63148E232190D72D0075384D /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63148E222190D72D0075384D /* ResultViewController.swift */; };
 		F08737B72094D898916E1FB1 /* BMI_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0873C917C08811032D33CD3 /* BMI_CalculatorTests.swift */; };
 		F0873802C2AA611CCA1665A0 /* BMI_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0873D0FACC361A819E9B22B /* BMI_CalculatorUITests.swift */; };
 		F08739555B56B16968B1643B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0873BF9928FE1397B3B99ED /* AppDelegate.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63148E222190D72D0075384D /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		F087316B2218FD8BDC4340BF /* BMI CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BMI CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0873243DDD331842E40D1A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		F08735292681DCDBD95D7CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				F08738DC720056975EAA0A94 /* LaunchScreen.storyboard */,
 				F0873BF9928FE1397B3B99ED /* AppDelegate.swift */,
 				F08737AF973BC06682C393DE /* Main.storyboard */,
+				63148E222190D72D0075384D /* ResultViewController.swift */,
 				F0873BEA70777D347A301DED /* ViewController.swift */,
 			);
 			path = "BMI Calculator";
@@ -258,6 +261,7 @@
 			files = (
 				F08739555B56B16968B1643B /* AppDelegate.swift in Sources */,
 				F0873C64C5B891F79FEB1DD4 /* ViewController.swift in Sources */,
+				63148E232190D72D0075384D /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +497,7 @@
 				F0873A528723E693A1DB86A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F087377DBD3C94047B5D8B05 /* Build configuration list for PBXNativeTarget "BMI CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +506,7 @@
 				F08732B4CB2CFB32F7258258 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F08738120DC7C9EE5437A300 /* Build configuration list for PBXNativeTarget "BMI Calculator" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +515,7 @@
 				F0873DCC73A05148FFA7AAA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0873B821216D5AAC1F62149 /* Build configuration list for PBXProject "BMI Calculator" */ = {
 			isa = XCConfigurationList;
