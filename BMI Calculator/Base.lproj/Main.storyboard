@@ -71,6 +71,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Calculate"/>
                                 <connections>
+                                    <action selector="calculateBmi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ef-TX-VWO"/>
                                     <segue destination="Aah-LG-Cjw" kind="presentation" identifier="segueBMIResult" id="Gks-Qu-wlt"/>
                                 </connections>
                             </button>
