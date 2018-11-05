@@ -71,13 +71,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Calculate"/>
                                 <connections>
-                                    <segue destination="Aah-LG-Cjw" kind="presentation" id="Gks-Qu-wlt"/>
+                                    <segue destination="Aah-LG-Cjw" kind="presentation" identifier="segueBMIResult" id="Gks-Qu-wlt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuC-Yc-VH9">
                                 <rect key="frame" x="117" y="455" width="140" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetFields:" destination="BYZ-38-t0r" eventType="touchDragInside" id="nAV-Nr-PHp"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEz-EC-JrO">
                                 <rect key="frame" x="95" y="48" width="185" height="44"/>
@@ -90,6 +93,12 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="textFieldAge" destination="oi0-Wn-vhv" id="qhK-Ht-oig"/>
+                        <outlet property="textFieldHeight" destination="42H-aC-hP9" id="Vgt-7G-eh5"/>
+                        <outlet property="textFieldUserName" destination="PRz-Wr-QFf" id="anP-wO-DBh"/>
+                        <outlet property="textFieldWeight" destination="MdM-x3-ffF" id="ZJh-HV-oGW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -154,6 +163,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="TmK-mo-CBU"/>
                     </view>
+                    <connections>
+                        <outlet property="labelAge" destination="IiN-U7-FgY" id="Eja-VV-oY5"/>
+                        <outlet property="labelUserName" destination="eBH-Wm-DLL" id="9pK-Kc-kCN"/>
+                        <outlet property="lableResultBmi" destination="57W-yy-UtA" id="SBJ-8x-Bbb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K2w-EA-5yD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
