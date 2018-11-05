@@ -21,7 +21,6 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var lableResultBmi: UILabel!
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,10 +31,14 @@ class ResultViewController: UIViewController {
         self.labelAge.text = "\(sAge) years";
         self.lableResultBmi.text = "\(sValueBmi)";
         
-        
-
     }
 
+    
+    @IBAction func returnScreen(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

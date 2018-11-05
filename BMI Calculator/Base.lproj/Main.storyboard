@@ -159,6 +159,9 @@
                                 <rect key="frame" x="134" y="474" width="106" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="&lt; Return"/>
+                                <connections>
+                                    <action selector="returnScreen:" destination="Aah-LG-Cjw" eventType="touchUpInside" id="FqH-kb-Ce2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
