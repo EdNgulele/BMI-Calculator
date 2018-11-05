@@ -36,13 +36,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    
+
     @IBAction func resetFields(_ sender: Any) {
         textFieldUserName.text = nil;
         textFieldHeight.text = nil;
         textFieldWeight.text = nil;
-        
     }
+    
     
     func showAlert(){
         let alert = UIAlertController(title: "Alert", message: "Complete all fields", preferredStyle: UIAlertControllerStyle.alert);
