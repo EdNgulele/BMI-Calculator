@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-
+    
     @IBAction func resetFields(_ sender: Any) {
         textFieldUserName.text = nil;
         textFieldHeight.text = nil;
@@ -98,6 +98,13 @@ class ViewController: UIViewController {
             resultScreen?.userName = self.userName;
             resultScreen?.age = self.age;
         }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.becomeFirstResponder();
+    }
+    override var canBecomeFirstResponder: Bool{
+        return true
     }
     
 }
